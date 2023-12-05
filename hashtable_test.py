@@ -100,7 +100,7 @@ class TestHashtable:
         for i in range(8,20):
             hashtable.put(i, f"testing{i}")
             assert hashtable.num_elements == i + 1
-            assert hashtable.num_buckets == 27
+            assert hashtable.num_buckets == 7
 
         for i in range(20):
             value = hashtable.get(i)

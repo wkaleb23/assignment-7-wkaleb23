@@ -11,8 +11,16 @@ class TestMovieIndex():
     def test_movie_index_fails(self):
         movie_index = MovieIndex()
         movie1 = Movie(entry1)
-        with pytest.raises(NotImplementedError):
-            movie_index.add(movie1)
+        movie2 = Movie(entry2)
+        movie_index.add(movie1)
+        movie_index.add(movie2)
+        
+        assert movie_index.num_elements == 2
+        result = movie_index.get_movie_set("Limitless")
+        assert result is not None
+        assert type(result) is MovieSet
+        assert result.description == "Limitless"
+        assert len(result.movies) == 1
 
 
 class TestTitleIndex():
