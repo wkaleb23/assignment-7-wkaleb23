@@ -2,12 +2,7 @@
 
 UW, EE 590a
 Fall 2023
-
-## Objectives
-
-* Implement a simple hashtable
-* Use the hashtable to do a simple indexing of data
-* Write a query processor to allow a user to interact with the program and query the data
+Wilson Martinez
 
 ## How to Run the Project
 1. Clone the Repository
